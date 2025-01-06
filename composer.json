@@ -1,0 +1,32 @@
+{
+    "name": "aheinis/patch-risk-detector",
+    "description": "A composer plugin to detect risky and safe patches.",
+    "type": "composer-plugin",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "aheinis\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrin Heinis",
+            "email": "andrin.heinis@liip.ch"
+        }
+    ],
+    "require": {
+        "composer-plugin-api": "^2.0"
+    },
+    "extra": {
+        "class": "aheinis\\Composer\\PatchRiskDetectorPlugin"
+    },
+    "repositories": {
+        "local": {
+            "type": "path",
+            "url": "../patch-risk-detector"
+        }
+    },
+    "require-dev": {
+        "composer/composer": "^2.8"
+    }
+}
